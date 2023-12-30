@@ -1,0 +1,17 @@
+<%- include('layout'); %>
+
+<div class="userdetail">
+    <div>
+        <h3 class="p"><%= userDetail.name  %></h3>
+        <p class="p"><b>Id: </b><%= userDetail.id %></p>
+        <p class="p"><b>Comment: </b><%= userDetail.comment %> </p>
+    </div>
+    <div>
+        <a  class="links" href="<%= userDetail.id %>/delete?_method=DELETE">Delete</a>
+        <a  class="links" href="<%= userDetail.id %>/edit">Edit</a>
+    </div>
+</div>
+
+
+</body>
+</html>

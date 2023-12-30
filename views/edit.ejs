@@ -1,0 +1,17 @@
+<%- include('layout'); %>
+
+<div class="userdetail">
+   <form action="/comments/<%= userDetail.id %>/edit/editComment?_method=PATCH" method="post" class="form">
+      <section class="s2">
+         <label for="comment">Say something</label>
+         <textarea name="commentText" id="comment" cols="30" rows="10"><%= userDetail.comment %></textarea>
+      </section>
+      <section>
+         <button class="submitBtn">Save</button>
+      </section>
+  </form>  
+  <a  class="links" href="/form">Make Comments</a>  
+</div>    
+               
+               
+       

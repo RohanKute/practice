@@ -1,0 +1,14 @@
+<%- include('layout'); %>
+
+<div class="userComments">
+    <ul>
+        <% for( let i = 0; i < commentsObjArr.length; i++ ) { %>
+            <li><%= commentsObjArr[i].comment %> - <b><%= commentsObjArr[i].name %></b>
+                 <a class="links" href="comments/<%= commentsObjArr[i].id %>">Details</a></li>
+         <% } %>
+     </ul>  
+       <a  class="links" href="/form">Make Comments</a>  
+
+</div>  
+</body>
+</html>

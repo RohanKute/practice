@@ -1,0 +1,21 @@
+<%- include('layout'); %>
+    <div class="formDiv">
+        <form action="/addComment" method="post" class="form">
+             <section class="s1">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name">
+             </section>
+             <section class="s2">
+                <label for="name">Say something</label>
+                <textarea name="commentText" id="" cols="30" rows="10" placeholder="looool"></textarea>
+             </section>
+             <section>
+                <button class="submitBtn">Comment</button>
+             </section>
+        </form>
+        <div>
+            <a href="/comments"   class="links">See what people are saying</a>
+        </div>
+    </div>
+   </div>   
+</body>
